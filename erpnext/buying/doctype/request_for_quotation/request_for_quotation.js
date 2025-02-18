@@ -262,7 +262,7 @@ frappe.ui.form.on("Request for Quotation", {
 			],
 		});
 
-		dialog.fields_dict["supplier"].df.onchange = () => {
+		dialog.fields_dict["supplier"].df.= () => {
 			frm.call("get_supplier_email_preview", {
 				supplier: dialog.get_value("supplier"),
 			}).then(({ message }) => {
